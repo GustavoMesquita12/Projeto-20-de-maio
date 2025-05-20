@@ -1,0 +1,137 @@
+/* Estilo geral */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111; /* Fundo escuro para o site */
+    color: #fff; /* Texto claro */
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #111; /* Fundo escuro no cabeçalho */
+    padding: 60px 0;
+    text-align: center;
+    border-bottom: 3px solid #f39c12; /* Linha dourada para dar destaque */
+}
+
+header .avatar {
+    background-color: #f39c12; /* Cor sólida para o avatar */
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%; /* Forma circular */
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #f39c12; /* Título em dourado */
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #f39c12; /* Dourado para o texto */
+    margin-top: 10px;
+}
+
+header .badge {
+    font-size: 16px;
+    margin: 5px;
+    background-color: #f39c12;
+}
+
+/* Cards de projetos */
+.card {
+    background-color: #2c3e50; /* Cor escura para os cards */
+    border: none;
+    color: #fff; /* Texto claro */
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombras para dar profundidade */
+}
+
+.card-header {
+    background-color: #2c3e50; /* Cor escura */
+    height: 200px; /* Altura fixa para o cabeçalho do card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-header span {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Texto e botões */
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    color: #f39c12; /* Título em dourado */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.card .btn {
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.card .btn:hover {
+    background-color: #e67e22; /* Hover no botão com cor mais escura */
+}
+
+/* Rodapé */
+footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .card-header {
+        height: 150px; /* Reduzir a altura dos cabeçalhos nos dispositivos menores */
+    }
+
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+}
